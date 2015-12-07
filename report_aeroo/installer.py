@@ -149,7 +149,7 @@ class docs_config_installer(models.TransientModel):
         defaults['host'] = icp.get_param(self.env.cr, self.env.uid, 
                             'aeroo.docs_host') or 'localhost'
         defaults['port'] = int(icp.get_param(self.env.cr, self.env.uid, 
-                            'aeroo.docs_port')) or int(8100)
+                            'aeroo.docs_port')) or 8989
         defaults['auth_type'] = icp.get_param(self.env.cr, self.env.uid, 
                             'aeroo.docs_auth_type') or False
         defaults['username'] = icp.get_param(self.env.cr, self.env.uid, 

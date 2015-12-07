@@ -8,6 +8,11 @@
       <field name="inherit_id" ref="base.res_config_installer"/>
       <field name="arch" type="xml">
           <data>
+<!--
+                <form position="attributes" version="7.0">
+                  <attribute name="string">Aeroo Reports Installation</attribute>
+                </form>
+-->
                 <footer position="replace">
                     <footer>
                         <button name="action_next" type="object" string="Continue" invisible="context.get('menu',False)" class="oe_highlight"/>
